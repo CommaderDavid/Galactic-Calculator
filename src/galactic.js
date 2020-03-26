@@ -4,6 +4,11 @@ export class Calculate {
   }
 
   mercuryAge() {
-    this.age *= .24;
+    this.age /= .24;
+    return this.age;
+  }
+
+  venusAge() {
+    this.age /= .62;
   }
 }
