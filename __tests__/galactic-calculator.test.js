@@ -14,5 +14,11 @@ describe('Calculate', () => {
     let u = userAge.toFixed(2);
     expect(u).toEqual("104.17");
   });
-  
+
+  test('should calculate users age by venus solar cycle', () => {
+    let user = new Calculate(25);
+    let userAge = user.venusAge();
+    let u = userAge.toFixed(2);
+    expect(u).toEqual("40.32");
+  });
 });

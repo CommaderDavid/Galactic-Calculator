@@ -10,5 +10,6 @@ export class Calculate {
 
   venusAge() {
     this.age /= .62;
+    return this.age;
   }
 }
