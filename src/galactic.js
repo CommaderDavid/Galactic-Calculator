@@ -1,6 +1,7 @@
 export class Calculate {
   constructor(age) {
     this.age = age;
+    this.lifeExpect = 95;
   }
 
   mercuryAge() {
@@ -21,5 +22,11 @@ export class Calculate {
   jupiterAge() {
     this.age *= 11.86;
     return this.age;
+  }
+
+  determinesLife(newAge) {
+    this.newAge = newAge;
+    this.lifeExpect -= this.newAge;
+    return this.lifeExpect;
   }
 }

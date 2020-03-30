@@ -26,4 +26,18 @@ describe('Calculate', () => {
     let userAge = user.marsAge();
     expect(userAge).toEqual(47);
   });
+
+  test('should calculate users age by jupiters solar cycle', () => {
+    let user = new Calculate(25);
+    let userAge = user.jupiterAge();
+    let u = userAge.toFixed(1);
+    expect(u).toEqual("296.5");
+  });
+
+  test('should test to see how long user has left to live', () => {
+    let user = new Calculate(25);
+    let userAge = user.marsAge();
+    let lifeLeft = user.determinesLife(userAge);
+    expect(lifeLeft).toEqual(48);
+  })
 });
