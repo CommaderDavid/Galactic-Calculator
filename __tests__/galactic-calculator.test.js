@@ -11,21 +11,19 @@ describe('Calculate', () => {
   test('should calculate users age by mercurys solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.mercuryAge();
-    let u = userAge.toFixed(2);
-    expect(u).toEqual("104.17");
+    expect(userAge).toEqual(6);
   });
 
   test('should calculate users age by venus solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.venusAge();
-    let u = userAge.toFixed(2);
-    expect(u).toEqual("40.32");
+    let u = userAge.toFixed(1);
+    expect(u).toEqual("15.5");
   });
 
   test('should calculate users age by mars solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.marsAge();
-    let u = userAge.toFixed(2);
-    expect(u).toEqual("13.30");
+    expect(userAge).toEqual(47);
   });
 });
