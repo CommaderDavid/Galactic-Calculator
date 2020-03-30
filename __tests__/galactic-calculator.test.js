@@ -45,6 +45,6 @@ describe('Calculate', () => {
     let user = new Calculate(25);
     let userAge = user.jupiterAge();
     let lifeLeft = user.determinesLife(userAge);
-    expect(lifeLeft).toEqual(-201.5);
+    expect(lifeLeft).toEqual(201.5);
   });
 });
