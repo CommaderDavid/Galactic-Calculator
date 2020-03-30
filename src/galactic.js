@@ -27,6 +27,12 @@ export class Calculate {
   determinesLife(newAge) {
     this.newAge = newAge;
     this.lifeExpect -= this.newAge;
-    return this.lifeExpect;
+    if (this.lifeExpect < 0) {
+      console.log("you past...");
+      return this.lifeExpect;
+    } else {
+      console.log("you have...");
+      return this.lifeExpect;
+    }
   }
 }

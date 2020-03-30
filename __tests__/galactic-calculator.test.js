@@ -39,5 +39,12 @@ describe('Calculate', () => {
     let userAge = user.marsAge();
     let lifeLeft = user.determinesLife(userAge);
     expect(lifeLeft).toEqual(48);
-  })
+  });
+
+  test('should show how many years user is over expected life', () => {
+    let user = new Calculate(25);
+    let userAge = user.jupiterAge();
+    let lifeLeft = user.determinesLife(userAge);
+    expect(lifeLeft).toEqual(-201.5);
+  });
 });
