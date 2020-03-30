@@ -12,4 +12,9 @@ export class Calculate {
     this.age /= .62;
     return this.age;
   }
+
+  marsAge() {
+    this.age /= 1.88;
+    return this.age;
+  }
 }
