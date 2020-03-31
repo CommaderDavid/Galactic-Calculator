@@ -11,40 +11,41 @@ describe('Calculate', () => {
   test('should calculate users age by mercurys solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.mercuryAge();
-    expect(userAge).toEqual(6);
+    let u = userAge.toFixed(2);
+    expect(u).toEqual("103.75");
   });
 
   test('should calculate users age by venus solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.venusAge();
-    let u = userAge.toFixed(1);
-    expect(u).toEqual("15.5");
+    expect(userAge).toEqual(40);
   });
 
   test('should calculate users age by mars solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.marsAge();
-    expect(userAge).toEqual(47);
+    let u = userAge.toFixed(1);
+    expect(u).toEqual("12.5");
   });
 
   test('should calculate users age by jupiters solar cycle', () => {
     let user = new Calculate(25);
     let userAge = user.jupiterAge();
-    let u = userAge.toFixed(1);
-    expect(u).toEqual("296.5");
+    expect(userAge).toEqual(2);
   });
 
   test('should test to see how long user has left to live', () => {
     let user = new Calculate(25);
     let userAge = user.marsAge();
     let lifeLeft = user.determinesLife(userAge);
-    expect(lifeLeft).toEqual(48);
+    expect(lifeLeft).toEqual(82.5);
   });
 
   test('should show how many years user is over expected life', () => {
     let user = new Calculate(25);
-    let userAge = user.jupiterAge();
+    let userAge = user.mercuryAge();
     let lifeLeft = user.determinesLife(userAge);
-    expect(lifeLeft).toEqual(201.5);
+    let u = lifeLeft.toFixed(2);
+    expect(u).toEqual("8.75");
   });
 });

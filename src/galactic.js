@@ -5,22 +5,22 @@ export class Calculate {
   }
 
   mercuryAge() {
-    this.age *= .24;
+    this.age *= 4.15;
     return this.age;
   }
 
   venusAge() {
-    this.age *= .62;
+    this.age *= 1.6;
     return this.age;
   }
 
   marsAge() {
-    this.age *= 1.88;
+    this.age *= 0.5;
     return this.age;
   }
 
   jupiterAge() {
-    this.age *= 11.86;
+    this.age *= 0.08;
     return this.age;
   }
 
