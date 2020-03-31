@@ -2,7 +2,7 @@
 #### Lesson 2.2.5.1, for Fidgetech
 #### Date: 3/30/2020  by:_**David Boedigheimer**_
 ### Description
-=
+This program takes the users inputted age, and calculates it based on 4 different planets yearly cycles. It takes Mercury, Venus, Mars, and Jupiter's yearly cycles and then displays the current age of the user if the where born on that planet. This program was made with JavaScript, webpacks, and ES6.
 ### BDD Process
 1. User enters their age
       * **Input**: 25
